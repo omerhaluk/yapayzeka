@@ -8,8 +8,9 @@ import javax.swing.JPanel;
 
 
 
-public class Arayuz extends JPanel implements Runnable {
-
+public class Arayuz extends JPanel implements Runnable { 
+// 5 adet topumuzu tanımladıktan sonra bu topların bir birne mesafesini hesaplamamız lazım onun için 
+// 1 için 1 den 2,3,4,5 e - 2 için 3,4,5 e -3 için 4 ,5 - 4 içinde 5 e olan mesafeler hesaplanacak     
     Top top1, top2, top3,top4,top5 ;
     double top12x, top12y, mesafe12, top13x, top13y, mesafe13, top23x, top23y, mesafe23;
     double top14x, top14y, mesafe14, top15x, top15y, mesafe15, top24x, top24y, mesafe24; 
@@ -17,12 +18,12 @@ public class Arayuz extends JPanel implements Runnable {
     Thread islem;
 
     public Arayuz() {        
-        top1 = new Top(150, 150, 80, Color.green);
-        top2 = new Top(90, 90, 60, Color.black);
-        top3 = new Top(250, 200, 45, Color.blue);
-        top4 = new Top(200, 150, 70, Color.red);
-        top5 = new Top(120, 120, 60, Color.yellow);
-        
+        top1 = new Top(150, 150, 80, Color.green); // yeşil renkli topumuz
+        top2 = new Top(90, 90, 60, Color.black);  // siyah renkli topumuz
+        top3 = new Top(250, 200, 45, Color.blue); // mavi renkli topumuz
+        top4 = new Top(200, 150, 70, Color.red); // kırmızı renkli topumuz
+        top5 = new Top(120, 120, 60, Color.yellow); // sarı renkli toplumuz
+        //topların x ve y yönündeki hız
         top1.isleXHiz(6);
         top1.isleYHiz(7);
         
