@@ -6,8 +6,8 @@ import javax.swing.JFrame;
 
 
 public class Main {
-    
-    public static int genislik = 640;
+    // ekran ayarı
+    public static int genislik = 640; 
     public static int yukseklik = 480;
 
     public static void main(String[] args) {
